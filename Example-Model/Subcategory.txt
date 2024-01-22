@@ -1,0 +1,10 @@
+-------------------------------------
+|     Sub-Category Model Example    |
+-------------------------------------
+{
+  "_id": ObjectId("MongoDB Generated Unique Id"),
+  "name": "Pipe Repair",
+  "category_id": "5f36a5d69df2d65dfc4f02c3",
+  "createdAt": "2022-01-04T14:30:00.000Z",
+  "updatedAt": "2022-01-04T14:45:00.000Z"
+}

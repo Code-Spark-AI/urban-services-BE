@@ -1,0 +1,12 @@
+-------------------------------------
+|      Service Model Example        |
+-------------------------------------
+{
+  "_id": "5f36a5d69df2d65dfc4f02e5",
+  "name": "Emergency Plumbing",
+  "location_id": "5f36a5d69df2d65dfc4f02b2",
+  "category_id": "5f36a5d69df2d65dfc4f02c3",
+  "sub_category_id": "5f36a5d69df2d65dfc4f02d4",
+  "createdAt": "2022-01-05T18:00:00.000Z",
+  "updatedAt": "2022-01-05T18:15:00.000Z"
+}

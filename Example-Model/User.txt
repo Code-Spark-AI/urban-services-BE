@@ -1,0 +1,11 @@
+-------------------------------------
+|         User Model Example        |
+-------------------------------------
+{
+  "_id": ObjectId("MongoDB Generated Unique Id")
+  "userName": "john_doe",
+  "email": "john.doe@example.com",
+  "password": "hashed_password",
+  "createdAt": "2022-01-01T12:00:00.000Z",
+  "updatedAt": "2022-01-01T12:30:00.000Z"
+}

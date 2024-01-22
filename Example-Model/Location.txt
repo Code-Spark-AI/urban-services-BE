@@ -1,0 +1,10 @@
+-------------------------------------
+|      Location Model Example       |
+-------------------------------------
+{
+  "_id": ObjectId("MongoDB Generated Unique Id"),
+  "city": "Cityville",
+  "status": "active",
+  "createdAt": "2022-01-02T08:15:00.000Z",
+  "updatedAt": "2022-01-02T08:30:00.000Z"
+}
