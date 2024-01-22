@@ -15,15 +15,15 @@ const router = Router();
 // |-------------{ ADMIN ACCESS }---------------|
 
 // POST ROUTE
-router.post("/create", AUTHENTICATE_USER, createLocation);
+router.post("/admin/create", AUTHENTICATE_USER, createLocation);
 // PUT ROUTE
-router.put("/:Id", AUTHENTICATE_USER, updateLocationById);
+router.put("/admin/:Id", AUTHENTICATE_USER, updateLocationById);
 
 // |------------{ USER ONLY }--------------------|
 
 // GET ROUTE
-router.get("/", AUTHENTICATE_USER, getAllLocations);
-router.get("/:Id", AUTHENTICATE_USER, getLocationById);
+router.get("/user/", AUTHENTICATE_USER, getAllLocations);
+router.get("/user/:Id", AUTHENTICATE_USER, getLocationById);
 
 
 export default router;
