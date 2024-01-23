@@ -1,0 +1,9 @@
+-------------------------------------
+|      Category Model Example      |
+-------------------------------------
+{
+  "_id": ObjectId("MongoDB Generated Unique Id"),
+  "name": "Plumbing",
+  "createdAt": "2022-01-03T10:45:00.000Z",
+  "updatedAt": "2022-01-03T11:00:00.000Z"
+}

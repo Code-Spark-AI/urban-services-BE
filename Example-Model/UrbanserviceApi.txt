@@ -1,0 +1,29 @@
+---------------------------------------------------------------------
+|                      Urban Service API                            |
+---------------------------------------------------------------------
+
+  Routes:
+
+  - /register      [POST]  - User registration
+  - /login         [POST]  - User login
+  - /logout        [POST]  - User logout
+
+  - /locations           - Get all locations
+  - /locations/:id       - Get a specific location by ID
+
+  - /categories          - Get all categories
+  - /categories/:id      - Get a specific category by ID
+
+  - /sub-categories      - Get all sub-categories
+  - /sub-categories/:id  - Get a specific sub-category by ID
+
+  - /services             - Get all services
+  - /services/:id         - Get a specific service by ID
+
+  Middleware:
+
+  - authenticateUser      - User authentication middleware
+
+---------------------------------------------------------------------
+|                        ALL THE BEST FRONTEND                      |
+---------------------------------------------------------------------
