@@ -80,7 +80,7 @@ const updateAppointmentStatusAdmin = async (req, res) => {
     const { status } = req.body;
 
     const updatedAppointment = await Booking.findOneAndUpdate(
-      { "appointments._id": id },
+      { "appointments._id": Id },
       { $set: { "appointments.$.status": status } },
       { new: true }
     ).exec();
@@ -108,7 +108,7 @@ const updateAppointmentPaymentStatusAdmin = async (req, res) => {
     const { payment_status } = req.body;
 
     const updatedAppointment = await Booking.findOneAndUpdate(
-      { "appointments._id": id },
+      { "appointments._id": Id },
       { $set: { "appointments.$.payment_status": payment_status } },
       { new: true }
     ).exec();
@@ -137,7 +137,7 @@ const updateAppointmentFeedbackAdmin = async (req, res) => {
 
     // Update the feedback for the specified appointment
     const updatedAppointment = await Booking.findOneAndUpdate(
-      { "appointments._id": id },
+      { "appointments._id": Id },
       {
         $set: {
           "appointments.$.feedback.user_id": user_id,
@@ -208,9 +208,9 @@ const createBooking = async (req, res) => {
 const getBookingById = async (req, res) => {
   try {
     const { userId } = req.user;
-    const { id } = req.params;
+    const { Id } = req.params;
 
-    const booking = await Booking.findOne({ _id: id, user_id: userId })
+    const booking = await Booking.findOne({ _id: Id, user_id: userId })
       .populate("service_id")
       .exec();
 
@@ -230,11 +230,11 @@ const getBookingById = async (req, res) => {
 const updateBookingFeedback = async (req, res) => {
   try {
     const { userId } = req.user;
-    const { id } = req.params;
+    const { Id } = req.params;
     const { rating, comment } = req.body;
 
     const booking = await Booking.findOneAndUpdate(
-      { _id: id, user_id: userId },
+      { _id: Id, user_id: userId },
       {
         $set: {
           "feedback.$[elem].rating": rating,
