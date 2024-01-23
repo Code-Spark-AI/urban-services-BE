@@ -1,4 +1,4 @@
-import SubCategory from "../Model/SubcategoryModel";
+import SubCategory from "../Model/SubcategoryModel.js";
 
 /*
 
